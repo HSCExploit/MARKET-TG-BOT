@@ -84,7 +84,7 @@ def view_groups(message):
 
 @bot.message_handler(commands=['support'])
 def support(message):
-  bot.send_message(message.from_user.id, 'Для получения помощи пишите: @levchikBB')
+  bot.send_message(message.from_user.id, 'Для получения помощи пишите: @tg')
 
 @bot.message_handler(commands=['clear_wait'])
 def clear_w(message):
@@ -174,7 +174,7 @@ def buttons_responce(responce):
         check_buttons = types.InlineKeyboardMarkup()
         check_pay = types.InlineKeyboardButton(text="Проверить оплату", callback_data='check ' + user_id + ' ' + responce_data_qiwi[0] + ' ' + responce_data_qiwi[1] + ' ' + responce_data_qiwi[2] + ' ' + responce_data_qiwi[3])
         check_buttons.add(check_pay)
-        bot.send_message(user_id, 'Переведите ' + responce_data_qiwi[3] + ' рублей на кошелек +79780128538 c комментарием: ' + str(user_id) + ' ' + responce_data_qiwi[2] + '\nПосле оплаты нажмите кнопку "Проверить оплату". Проверка оплаты занимает от 1 минуты до 24 часов. Если оплата не была проверена - обратитесь в тех-поддержку.', reply_markup = check_buttons)
+        bot.send_message(user_id, 'Переведите ' + responce_data_qiwi[3] + ' рублей на кошелек *NOMBER* c комментарием: ' + str(user_id) + ' ' + responce_data_qiwi[2] + '\nПосле оплаты нажмите кнопку "Проверить оплату". Проверка оплаты занимает от 1 минуты до 24 часов. Если оплата не была проверена - обратитесь в тех-поддержку.', reply_markup = check_buttons)
 
 
 # Coded By HSC_EXPLOIT
@@ -193,7 +193,7 @@ def buttons_responce(responce):
           check_buttons = types.InlineKeyboardMarkup()
           check_pay = types.InlineKeyboardButton(text="Проверить оплату", callback_data='check ' + user_id + ' ' + responce_data_yad[0] + ' ' + responce_data_yad[1] + ' ' + responce_data_yad[2] + ' ' + responce_data_yad[3])
           check_buttons.add(check_pay)
-          bot.send_message(user_id, 'Переведите ' + responce_data_yad[3] + ' рублей на кошелек 410014115168263 c комментарием: ' + str(user_id) + ' ' + responce_data_yad[2] + '\nПосле оплаты нажмите кнопку "Проверить оплату". Проверка оплаты занимает от 1 минуты до 24 часов. Если оплата не была проверена - обратитесь в тех-поддержку.', reply_markup = check_buttons)
+          bot.send_message(user_id, 'Переведите ' + responce_data_yad[3] + ' рублей на кошелек *NOMBER* c комментарием: ' + str(user_id) + ' ' + responce_data_yad[2] + '\nПосле оплаты нажмите кнопку "Проверить оплату". Проверка оплаты занимает от 1 минуты до 24 часов. Если оплата не была проверена - обратитесь в тех-поддержку.', reply_markup = check_buttons)
         else:
           if responce_data[0] == 'sber':
             str_meth = 'Сбербанк Онлайн'
@@ -203,7 +203,7 @@ def buttons_responce(responce):
             check_buttons = types.InlineKeyboardMarkup()
             check_pay = types.InlineKeyboardButton(text="Проверить оплату", callback_data='check ' + user_id + ' ' + responce_data_sb[0] + ' ' + responce_data_sb[1] + ' ' + responce_data_sb[2] + ' ' + responce_data_sb[3])
             check_buttons.add(check_pay)
-            bot.send_message(user_id, 'Переведите ' + responce_data_sb[3] + ' рублей на карту 5469 5200 1944 7127 c комментарием: ' + str(user_id) + ' ' + responce_data_sb[2] + '\nПосле оплаты нажмите кнопку "Проверить оплату". Проверка оплаты занимает от 1 минуты до 24 часов. Если оплата не была проверена - обратитесь в тех-поддержку.', reply_markup = check_buttons)
+            bot.send_message(user_id, 'Переведите ' + responce_data_sb[3] + ' рублей на карту *NOMBER* c комментарием: ' + str(user_id) + ' ' + responce_data_sb[2] + '\nПосле оплаты нажмите кнопку "Проверить оплату". Проверка оплаты занимает от 1 минуты до 24 часов. Если оплата не была проверена - обратитесь в тех-поддержку.', reply_markup = check_buttons)
           else:
             if responce_data[0] == 'check':
               id_s = random.randint(10000, 99999) + random.randint(1, 1000)
