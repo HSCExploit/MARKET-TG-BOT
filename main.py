@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+# Coded By HSC_EXPLOIT
 import time
 from threading import Thread
 import telebot
@@ -38,7 +39,7 @@ help_admin_text ='''
 Добавить товар - /add *Название* *описание* *стоимость*
 '''
 
-
+# Coded By HSC_EXPLOIT
 
 
 @bot.message_handler(commands=['start'])
@@ -69,7 +70,7 @@ def view_pr_num(message):
   db_connect.commit()
   db_connect.close()
   
-
+# Coded By HSC_EXPLOIT
 @bot.message_handler(commands=['my_id'])
 def get_my_id(message):
   bot.send_message(message.from_user.id, str(message.chat.id))
@@ -97,8 +98,7 @@ def clear_w(message):
   else:
     pass
 #DELETE FROM table1
-
-
+# Coded By HSC_EXPLOIT
 @bot.message_handler(commands=['products'])
 def view_products(message):
   if (str(message.chat.id) in admins):
@@ -177,7 +177,7 @@ def buttons_responce(responce):
         bot.send_message(user_id, 'Переведите ' + responce_data_qiwi[3] + ' рублей на кошелек +79780128538 c комментарием: ' + str(user_id) + ' ' + responce_data_qiwi[2] + '\nПосле оплаты нажмите кнопку "Проверить оплату". Проверка оплаты занимает от 1 минуты до 24 часов. Если оплата не была проверена - обратитесь в тех-поддержку.', reply_markup = check_buttons)
 
 
-
+# Coded By HSC_EXPLOIT
 
 
 
@@ -284,7 +284,7 @@ def buttons_responce(responce):
                   bot.send_message(check_id, 'Оплата отклонена. Пользователю отправлено оповещение об отклонении оплаты.')
 #5469 5200 1944 7127
 
-
+# Coded By HSC_EXPLOIT
 
         #db_c = sqlite3.connect('db.sqlite')
         #cursor_с = db_c.cursor()
@@ -339,7 +339,7 @@ def add_products(message):
   else:
     if '/del' in message.text:
       if str(message.chat.id) in admins:
-
+# Coded By HSC_EXPLOIT
         try:
           m2 = message.text
           m2 = m2.split(' ')
